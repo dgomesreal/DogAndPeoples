@@ -1,0 +1,11 @@
+﻿@model List<Tuple<People,Dog>>
+
+@foreach(var p in Model)
+            {
+                <p>@p.Item1.PeopleName</p>
+                <p>@p.Item2.DogName</p>
+                <p>@p.Item2.DogBreed</p>
+            } 
+@section Scripts{
+    <partial name="_Scripts" />
+}

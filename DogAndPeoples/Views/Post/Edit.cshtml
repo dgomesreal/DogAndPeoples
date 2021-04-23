@@ -1,0 +1,16 @@
+﻿@model DogAndPeoples.Models.Post
+
+<div>
+    @using (Html.BeginForm("Edit", "Post"))
+    {
+        @Html.HiddenFor(p => p.People.PeopleID)
+        @Html.HiddenFor(p => p.Dog.DogID)
+        @Html.EditorFor(p => p)
+
+        <button type="submit" class="btn btn-primary">Cadastrar</button>
+    }
+</div>
+
+@section Scripts{
+    <partial name="_Scripts" />
+}

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace DogAndPeoples.Models
+﻿namespace DogAndPeoples.Models
 {
     public class Dog
     {
+        public int DogID { get; set; }
+        public string DogName { get; set; }
+        public string DogBreed { get; set; }
     }
 }
