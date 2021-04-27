@@ -23,6 +23,7 @@ namespace DogAndPeoples.DAO
             return list;
         }
 
+        /*
         public void Add(People post)
         {
             context.People.Add(post);
@@ -49,6 +50,6 @@ namespace DogAndPeoples.DAO
         {
             context.Entry(post).State = EntityState.Modified;
             context.SaveChanges();
-        }
+        }*/
     }
 }

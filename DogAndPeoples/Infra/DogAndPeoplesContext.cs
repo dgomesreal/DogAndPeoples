@@ -1,16 +1,22 @@
 ﻿using DogAndPeoples.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 
 namespace DogAndPeoples.Infra
 {
     public class DogAndPeoplesContext : DbContext
     {
         public DogAndPeoplesContext(DbContextOptions<DogAndPeoplesContext> options) : base(options) { } 
-        public DbSet<People> People { get; set; }
-        public DbSet<Dog> Dog { get; set; }
-        public DbSet<Post> Post { get; set; }
+        public DbSet<People> Peoples { get; set; }
+        public DbSet<Dog> Dogs { get; set; }
+        public List<Tuple<People, Dog>> Tuples { get; set; }
 
-        public DbSet<Tuple<People, Dog>> Tuples { get; set; }
+        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Dog>()
+                .HasOne(p => p.People)
+                .WithMany(b => b.Dogs);
+        }*/
     }
 }

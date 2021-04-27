@@ -21,7 +21,7 @@ namespace DogAndPeoples.Controllers
         {
             dao.Add(post);
             return RedirectToAction("Index");
-        }*/
+        }
 
         public ActionResult Remove(int id)
         {
@@ -46,7 +46,7 @@ namespace DogAndPeoples.Controllers
             {
                 return View("Edit",p);
             }
-        }
+        }*/
         public ActionResult Report()
         {
             List<Tuple<People, Dog>> list = dao.List();
