@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "heN822OvvKeBX0utQDK/+lV5/mYd/NbLip0J9E9mcTxebHsQaSBxqB5lJ7N1Xlw5gKbqeQeXIgW9QIeBGddFPw==",
+  "dgSpecHash": "AScWDfWlntF/lokGhZo+xCfZ0EPzZQ1EofF8+8cwkzzQ2F4un0fvRS4fpaEs/JGeI2bQNUoFOEDjdmhrbL64Zg==",
   "success": true,
-  "projectFilePath": "D:\\Projetos\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj",
+  "projectFilePath": "D:\\Projects\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dgome\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\dgome\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

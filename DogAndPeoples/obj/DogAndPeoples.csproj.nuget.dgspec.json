@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj": {}
+    "D:\\Projects\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj": {}
   },
   "projects": {
-    "D:\\Projetos\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj": {
+    "D:\\Projects\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj",
+        "projectUniqueName": "D:\\Projects\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj",
         "projectName": "DogAndPeoples",
-        "projectPath": "D:\\Projetos\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj",
+        "projectPath": "D:\\Projects\\DogAndPeoples\\DogAndPeoples\\DogAndPeoples.csproj",
         "packagesPath": "C:\\Users\\dgome\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos\\DogAndPeoples\\DogAndPeoples\\obj\\",
+        "outputPath": "D:\\Projects\\DogAndPeoples\\DogAndPeoples\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
