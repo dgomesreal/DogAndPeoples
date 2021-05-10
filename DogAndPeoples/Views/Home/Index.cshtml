@@ -1,12 +1,12 @@
-﻿@model Tuple<People,Dog>
+﻿@model People
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Register a new Owner and your respective Dog</p>
     <form asp-controller="Post" asp-action="Add" method="post">
-        <label><input asp-for="Item1.PeopleName" type="text" class="form-control" placeholder="Dog Owner Name" aria-label="Username" aria-describedby="basic-addon1"></label>
-        <label><input asp-for="Item2.DogName" type="text" class="form-control" placeholder="Dog Name" aria-label="Username" aria-describedby="basic-addon1"></label>
-        <label><input asp-for="Item2.DogBreed" type="text" class="form-control" placeholder="Breed" aria-label="Username" aria-describedby="basic-addon1"></label>
+        <label><input asp-for="PeopleName" type="text" class="form-control" placeholder="Dog Owner Name" aria-label="Username" aria-describedby="basic-addon1"></label>
+        <label><input asp-for="Dog.DogName" type="text" class="form-control" placeholder="Dog Name" aria-label="Username" aria-describedby="basic-addon1"></label>
+        <label><input asp-for="Dog.DogBreed" type="text" class="form-control" placeholder="Breed" aria-label="Username" aria-describedby="basic-addon1"></label>
         <button type="submit" class="btn btn-outline-secondary">Register</button>
     </form>
 </div>

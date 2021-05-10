@@ -10,13 +10,6 @@ namespace DogAndPeoples.Infra
         public DogAndPeoplesContext(DbContextOptions<DogAndPeoplesContext> options) : base(options) { } 
         public DbSet<People> Peoples { get; set; }
         public DbSet<Dog> Dogs { get; set; }
-        public List<Tuple<People, Dog>> Tuples { get; set; }
 
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            modelBuilder.Entity<Dog>()
-                .HasOne(p => p.People)
-                .WithMany(b => b.Dogs);
-        }*/
     }
 }

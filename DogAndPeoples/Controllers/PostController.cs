@@ -9,7 +9,8 @@ namespace DogAndPeoples.Controllers
 {
     public class PostController : Controller
     {
-        private PostDAO dao;
+        private readonly PostDAO dao;
+        private List<People> list;
 
         //Dependency Injection
         public PostController(PostDAO dao)
@@ -17,39 +18,40 @@ namespace DogAndPeoples.Controllers
             this.dao = dao;
         }
 
-        /*public ActionResult Add(Post post)
+        public ActionResult Add(People people)
         {
-            dao.Add(post);
-            return RedirectToAction("Index");
+            dao.Add(people);
+            return RedirectToAction("Index", "Home");
         }
 
-        public ActionResult Remove(int id)
-        {
-            dao.Remove(id);
-            return RedirectToAction("Index");
-        }
+        //public ActionResult Remove(int id)
+        //{
+        //    dao.Remove(id);
+        //    return RedirectToAction("Index");
+        //}
 
-        public ActionResult BreedFilter([Bind(Prefix = "id")] string breed)
-        {
-            List<Post> list = dao.BreedFilter(breed);
-            return View("Index", list);
-        }
+        //public ActionResult BreedFilter([Bind(Prefix = "id")] string breed)
+        //{
+        //    List<Post> list = dao.BreedFilter(breed);
+        //    return View("Index", list);
+        //}
 
-        public ActionResult Edit(Post p)
-        {
-            if (ModelState.IsValid)
-            {
-                dao.Update(p);
-                return RedirectToAction("Index");
-            }
-            else
-            {
-                return View("Edit",p);
-            }
-        }*/
+        //public ActionResult Edit(Post p)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        dao.Update(p);
+        //        return RedirectToAction("Index");
+        //    }
+        //    else
+        //    {
+        //        return View("Edit",p);
+        //    }
+        //}
+
         public ActionResult Report()
         {
-            List<Tuple<People, Dog>> list = dao.List();
+            list = dao.List();
             return View(list);
         }
     }
