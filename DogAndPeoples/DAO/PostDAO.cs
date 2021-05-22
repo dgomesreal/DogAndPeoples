@@ -37,26 +37,23 @@ namespace DogAndPeoples.DAO
             context.SaveChanges();
         }
 
-        ////public void Remove(int id)
-        ////{
-        ////    var p = new People() { PeopleID = id };
-        ////    context.Peoples.Remove(p);
-        ////    context.SaveChanges();
-        ////    var d = new Dog() { DogID = id };
-        ////    context.Dog.Remove(d);
-        ////    context.SaveChanges();
-        ////}
+        public void Remove(int id)
+        {
+            var people = context.Peoples.OrderBy(p => p.PeopleID).Include(d => d.Dog.DogID).First();
+            context.Peoples.Remove(people);
+            context.SaveChanges();
+        }
 
-        ////public List<Peoples> BreedFilter(string breed)
-        ////{
-        ////    List<Peoples> list = context.Peoples.Where(post => post.Dog.DogBreed.Contains(breed)).ToList();
-        ////    return list;
-        ////}
+        public List<People> BreedFilter(string breed)
+        {
+            List<People> list = context.Peoples.Where(post => post.Dog.DogBreed.Contains(breed)).ToList();
+            return list;
+        }
 
-        ////public void Update(Peoples post)
-        ////{
-        ////    context.Entry(post).State = EntityState.Modified;
-        ////    context.SaveChanges();
-        ////}
+        public void Update(People post)
+        {
+            context.Entry(post).State = EntityState.Modified;
+            context.SaveChanges();
+        }
     }
 }

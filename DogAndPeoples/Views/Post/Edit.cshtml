@@ -1,9 +1,9 @@
-﻿@*@model DogAndPeoples.Models.Post
+﻿@model People
 
 <div>
     @using (Html.BeginForm("Edit", "Post"))
     {
-        @Html.HiddenFor(p => p.People.PeopleID)
+        @Html.HiddenFor(p => p.PeopleID)
         @Html.HiddenFor(p => p.Dog.DogID)
         @Html.EditorFor(p => p)
 
@@ -13,4 +13,4 @@
 
 @section Scripts{
     <partial name="_Scripts" />
-}*@
+}
