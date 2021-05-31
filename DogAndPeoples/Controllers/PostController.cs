@@ -16,6 +16,7 @@ namespace DogAndPeoples.Controllers
             this.dao = dao;
         }
 
+        [HttpPost]
         public ActionResult Add(People people)
         {
             dao.Add(people);
@@ -26,7 +27,7 @@ namespace DogAndPeoples.Controllers
         public ActionResult Remove(int id)
         {
             dao.Remove(id);
-            return RedirectToAction("Index");
+            return RedirectToAction("Report");
         }
 
         public ActionResult BreedFilter([Bind(Prefix = "id")] string breed)
@@ -35,6 +36,7 @@ namespace DogAndPeoples.Controllers
             return View("Index", list);
         }
 
+        [HttpPost]
         public ActionResult Edit(People p)
         {
             if (ModelState.IsValid)
@@ -44,7 +46,7 @@ namespace DogAndPeoples.Controllers
             }
             else
             {
-                return View("Edit", p);
+                return View("Report", p);
             }
         }
 

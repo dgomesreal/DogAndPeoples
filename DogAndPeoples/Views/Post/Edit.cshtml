@@ -1,14 +1,13 @@
 ﻿@model People
 
 <div>
-    @using (Html.BeginForm("Edit", "Post"))
-    {
-        @Html.HiddenFor(p => p.PeopleID)
-        @Html.HiddenFor(p => p.Dog.DogID)
-        @Html.EditorFor(p => p)
-
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
-    }
+    <form asp-controller="Post" asp-action="report" method="post">
+        <lable><input value="@Model.PeopleID" hidden required /></lable>
+        <label><input asp-for="PeopleName" type="text" class="form-control" placeholder="Dog Owner Name" aria-label="Username" aria-describedby="basic-addon1" required></label>
+        <label><input asp-for="Dog.DogName" type="text" class="form-control" placeholder="Dog Name" aria-label="Username" aria-describedby="basic-addon1" required></label>
+        <label><input asp-for="Dog.DogBreed" type="text" class="form-control" placeholder="Breed" aria-label="Username" aria-describedby="basic-addon1" required></label>
+        <button type="submit" class="btn btn-outline-secondary">Update</button>
+    </form>
 </div>
 
 @section Scripts{

@@ -131,7 +131,6 @@ D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.RazorCore
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\Razor\Views\Post\Edit.cshtml.g.cs
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\Razor\Views\Post\Report.cshtml.g.cs
-D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\Razor\Views\Post\View.cshtml.g.cs
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\Razor\Views\Shared\EditorTemplates\Post.cshtml.g.cs
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\Razor\Views\Shared\_Footer.cshtml.g.cs
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\Razor\Views\Shared\_Header.cshtml.g.cs
@@ -147,4 +146,4 @@ D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.dll
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\ref\DogAndPeoples.dll
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.pdb
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.genruntimeconfig.cache
-D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.csprojAssemblyReference.cache
+D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.csproj.AssemblyReference.cache

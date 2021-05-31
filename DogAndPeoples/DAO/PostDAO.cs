@@ -39,7 +39,8 @@ namespace DogAndPeoples.DAO
 
         public void Remove(int id)
         {
-            var people = context.Peoples.OrderBy(p => p.PeopleID).Include(d => d.Dog.DogID).First();
+            //var people = context.Peoples.OrderBy(p => p.PeopleID).Include(d => d.Dog.DogID).First();
+            People people = context.Peoples.Find(id);
             context.Peoples.Remove(people);
             context.SaveChanges();
         }
@@ -53,6 +54,7 @@ namespace DogAndPeoples.DAO
         public void Update(People post)
         {
             context.Entry(post).State = EntityState.Modified;
+            context.Update(post);
             context.SaveChanges();
         }
     }

@@ -8,7 +8,9 @@ namespace DogAndPeoples.Models
     {
         [Key()]
         public int DogID { get; set; }
+        [Required(ErrorMessage = "Required")]
         public string DogName { get; set; }
+        [Required(ErrorMessage = "Required")]
         public string DogBreed { get; set; }
 
         [ForeignKey("People")]

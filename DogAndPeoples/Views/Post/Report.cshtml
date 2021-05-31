@@ -16,12 +16,13 @@
     <tbody>
         @foreach (var p in Model)
         {
-            <tr>
-                <th scope="row">@i</th>
-                <td>@p.PeopleName</td>
-                <td>@p.Dog.DogName</td>
-                <td>@p.Dog.DogBreed</td>
-            </tr>
+        <tr>
+            <th scope="row">@i</th>
+            <td>@p.PeopleName</td>
+            <td>@p.Dog.DogName</td>
+            <td>@p.Dog.DogBreed</td>
+            <td>@Html.ActionLink("Deletar", "Remove", "Post", new { id = p.PeopleID })</td>                
+        </tr>
             i++;
         }
     </tbody>

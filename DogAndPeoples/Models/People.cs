@@ -6,6 +6,7 @@ namespace DogAndPeoples.Models
     {
         [Key()]
         public int PeopleID { get; set; }
+        [Required(ErrorMessage = "Required")]
         public string PeopleName { get; set; }
         public virtual Dog Dog { get; set; }
     }
