@@ -146,4 +146,3 @@ D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.dll
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\ref\DogAndPeoples.dll
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.pdb
 D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.genruntimeconfig.cache
-D:\Projects\DogAndPeoples\DogAndPeoples\obj\Debug\net5.0\DogAndPeoples.csproj.AssemblyReference.cache

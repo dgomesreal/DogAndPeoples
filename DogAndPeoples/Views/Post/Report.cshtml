@@ -21,7 +21,8 @@
             <td>@p.PeopleName</td>
             <td>@p.Dog.DogName</td>
             <td>@p.Dog.DogBreed</td>
-            <td>@Html.ActionLink("Deletar", "Remove", "Post", new { id = p.PeopleID })</td>                
+            <td><a asp-controller="Post" asp-action="Remove" asp-route-id="@p.PeopleID">Delete</a></td>
+            <td><a asp-controller="Post" asp-action="Edit" asp-route-id="@p.PeopleID">Edit</a></td>
         </tr>
             i++;
         }

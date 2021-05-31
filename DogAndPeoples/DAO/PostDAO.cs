@@ -51,10 +51,23 @@ namespace DogAndPeoples.DAO
             return list;
         }
 
-        public void Update(People post)
+        public People FindPerId(int id)
         {
-            context.Entry(post).State = EntityState.Modified;
-            context.Update(post);
+            People post = context.Peoples.Find(id);
+            return post;
+        }
+
+        public void Update(People people)
+        {
+            if (context.Entry(people).State == Microsoft.EntityFrameworkCore.EntityState.Detached)
+            {
+                context.Attach(people);
+                context.Entry(people).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            }
+            else
+            {
+                context.Update(people);
+            }
             context.SaveChanges();
         }
     }

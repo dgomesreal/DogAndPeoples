@@ -23,7 +23,6 @@ namespace DogAndPeoples.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        [HttpDelete("{id}")]
         public ActionResult Remove(int id)
         {
             dao.Remove(id);
@@ -36,18 +35,23 @@ namespace DogAndPeoples.Controllers
             return View("Index", list);
         }
 
-        [HttpPost]
-        public ActionResult Edit(People p)
+        public ActionResult PeopleUpdate(People people)
         {
             if (ModelState.IsValid)
             {
-                dao.Update(p);
+                dao.Update(people);
                 return RedirectToAction("Index");
             }
             else
             {
-                return View("Report", p);
+                return View("Report", people);
             }
+        }
+
+        public ActionResult Edit(int id)
+        {
+            People post = dao.FindPerId(id);
+            return View(post);
         }
 
         public ActionResult Report()

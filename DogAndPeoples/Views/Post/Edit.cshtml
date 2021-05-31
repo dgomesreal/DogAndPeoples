@@ -1,8 +1,8 @@
 ﻿@model People
 
 <div>
-    <form asp-controller="Post" asp-action="report" method="post">
-        <lable><input value="@Model.PeopleID" hidden required /></lable>
+    <form asp-controller="Post" asp-action="PeopleUpdate">
+        <lable><input type="hidden" name="id" value="@Model.PeopleID"/></lable>
         <label><input asp-for="PeopleName" type="text" class="form-control" placeholder="Dog Owner Name" aria-label="Username" aria-describedby="basic-addon1" required></label>
         <label><input asp-for="Dog.DogName" type="text" class="form-control" placeholder="Dog Name" aria-label="Username" aria-describedby="basic-addon1" required></label>
         <label><input asp-for="Dog.DogBreed" type="text" class="form-control" placeholder="Breed" aria-label="Username" aria-describedby="basic-addon1" required></label>
